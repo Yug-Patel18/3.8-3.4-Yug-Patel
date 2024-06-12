@@ -2,3 +2,26 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.dropDown{
+  float:right;
+}
+
+.title{
+  text-align: center;
+}
+
+.main{
+  background-color: honeydew;
+  text-align: center;
+}
+
+.cover{
+  background-image: url('images/homepage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  color: white; 
+  height: 300px;
+  width: 100%;
+}
