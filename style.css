@@ -1,5 +1,5 @@
-html {
-  height: 100%;
+html, body {
+  height: 100vh;
   width: 100%;
 }
 
@@ -15,6 +15,7 @@ body {
 
 /* Grid container */
 .grid-container {
+  height: 100%;
   display: grid;
   grid-template-areas: 
       "cover cover cover"
@@ -34,21 +35,29 @@ body {
   grid-area: title;
   text-align: center;
   font-size: 1.5rem;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main{
+  height: 45vh;
   grid-area: main;
   background-color: honeydew;
   text-align: center;
+  padding: 20px;
 }
 
 .cover{
   grid-area: cover;
+  position: relative;
   background-image: url('images/homepage.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
   color: white; 
-  height: 33vh;
+  height: 50vh;
   width: 100%;
 }
