@@ -29,12 +29,18 @@ body {
 
 .dropDown{
   float:right;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 30px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
 }
 
 .title{
   grid-area: title;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
   position: absolute;
   top: 45%;
@@ -43,11 +49,12 @@ body {
 }
 
 .main{
-  height: 45vh;
+  height: 70vh;
   grid-area: main;
   background-color: honeydew;
   text-align: center;
-  padding: 20px;
+  font-size: 1.4rem;
+  padding: 20px; 
 }
 
 .cover{
@@ -58,6 +65,33 @@ body {
   background-attachment: fixed;  
   background-size: cover;
   color: white; 
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
+
+.careersButton{
+  background-color: khaki;
+  padding: 10px;
+  border-radius: 8px; 
+  margin: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-tempate-areas:
+      "cover"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 30px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
