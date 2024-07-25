@@ -1,4 +1,188 @@
-html {
-  height: 100%;
+html, body {
+  height: 100vh;
   width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ADLaM Display;
+}
+
+.footer{
+  text-align: center;
+}
+/* Grid container */
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+      "cover cover cover"
+      "cover cover cover"
+      "main main main"
+      "footer footer footer";
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.dropDown{
+  float:right;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 30px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.title{
+  grid-area: title;
+  text-align: center;
+  font-size: 5vw;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main{
+  height: 70vh;
+  grid-area: main;
+  background-color: honeydew;
+  text-align: center;
+  font-size: 3vw;
+  padding: 20px; 
+  font-weight: 200;
+}
+
+.cover{
+  grid-area: cover;
+  position: relative;
+  background-image: url('images/homepage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  color: white; 
+  height: 100vh;
+  width: 100%;
+}
+
+.careersButton{
+  background-color: khaki;
+  padding: 10px;
+  border-radius: 15px; 
+  margin: 3%;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 30px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.footer{
+  padding: 1vw;
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 570px) {
+  .main{
+    height: 50vh;
+    grid-area: main;
+    background-color: honeydew;
+    text-align: center;
+    font-size: 3vw;
+    padding: 10px; 
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main{
+    height: 50vh;
+    grid-area: main;
+    background-color: honeydew;
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px; 
+  }
+  .footer{
+    padding: 1vw;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main{
+    height: 50vh;
+    grid-area: main;
+    background-color: honeydew;
+    text-align: center;
+    font-size: 2vw;
+    padding: 20px; 
+  }
+  .title{
+    grid-area: title;
+    text-align: center;
+    font-size: 3vw;
+  }
 }
