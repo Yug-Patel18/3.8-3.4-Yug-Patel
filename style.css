@@ -156,6 +156,7 @@ body {
 .careersButton{
   background-color: white;
   padding: 10px;
+  font-family: ADLaM Display;
   border-radius: 15px; 
   margin: 3%;
   transition-duration: 0.4s;
