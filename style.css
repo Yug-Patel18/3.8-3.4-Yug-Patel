@@ -167,7 +167,9 @@ body {
 
 .careersButton:hover {
   background-color: black; 
+  border-color: grey;
   color: white;
+  transform: scale(1.1);
   cursor: pointer;
 }
 

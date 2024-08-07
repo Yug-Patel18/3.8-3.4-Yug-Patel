@@ -11,10 +11,10 @@ html, body {
 
 body {
   font-family: ADLaM Display;
-  background-image: url('images/AIengineer.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+/*  background-image: url('images/AIengineer.jpg'); */
+/*  background-repeat: no-repeat; */
+/*  background-attachment: fixed;   */
+/*  background-size: cover; */
 }
 
 .footer {
@@ -136,18 +136,15 @@ body {
   padding: 20px; 
   font-weight: 200;
   color: white;
-  background-color: #0c0c0c;
-  border: 1px solid black;
-  opacity: 0.8;
+  background-color: #BFBBB8;
 }
 
 .cover{
   grid-area: cover;
   position: relative;
-/**  background-image: url('images/homepage.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover; **/
+  background-image: url('/images/AIengineer.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover;
   color: white; 
   height: 100vh;
   width: 100%;
