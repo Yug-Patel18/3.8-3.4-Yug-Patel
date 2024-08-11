@@ -129,7 +129,7 @@ body {
 }
 
 .main{
-  height: 70vh;
+  height: auto;
   grid-area: main;
   text-align: center;
   font-size: 3vw;
@@ -150,24 +150,6 @@ body {
   width: 100%;
 }
 
-.careersButton{
-  background-color: transparent;
-  padding: 10px;
-  font-family: ADLaM Display;
-  border-radius: 15px; 
-  margin: 3%;
-  color:white;
-  transition-duration: 0.4s;
-  border-color: white;
-  border-style: solid;
-}
-
-.careersButton:hover {
-  background-color: black; 
-  color: white;
-  cursor: pointer;
-}
-
 .btn {
   border: none; /* Remove borders */
   color: white; /* White text */
@@ -182,9 +164,17 @@ body {
   color: #818181;
 }
 
+.aiEngineer {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 570px) {
   .main{
-    height: 50vh;
+ /*   height: 50vh; */
+    height: auto;
     grid-area: main;
    /* background-color: #0c0c0c;*/
     text-align: center;
@@ -195,7 +185,8 @@ body {
 
 @media only screen and (min-width: 800px) {
   .main{
-    height: 50vh;
+    /*   height: 50vh; */
+    height: auto;
     grid-area: main;
     /* background-color: #0c0c0c;*/
     text-align: center;
@@ -210,7 +201,8 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .main{
-    height: 50vh;
+    /*   height: 50vh; */
+    height: auto;
     grid-area: main;
     /* background-color: #0c0c0c;*/
     text-align: center;
