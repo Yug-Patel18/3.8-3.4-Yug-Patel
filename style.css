@@ -29,11 +29,22 @@ body {
   opacity: 0.8;
 }
 
-.socials {
+/* .socials a i {
   font-size: 30px;
   cursor: pointer;
   display: flex;
   gap: 10px; 
+  color: white;
+} */
+
+.socials a i {
+  color: white;
+  font-size: 30px; /* Adjust the size as needed */
+  margin-right: 7px; /* Adds space between icons */
+}
+
+.socials a i:hover {
+  color: #ddd; /* Optional: Slightly lighter color on hover */
 }
 
 
