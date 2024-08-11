@@ -29,13 +29,15 @@ body {
   opacity: 0.8;
 }
 
-/* .socials a i {
-  font-size: 30px;
-  cursor: pointer;
+.email {
   display: flex;
-  gap: 10px; 
-  color: white;
-} */
+  align-items: center;
+}
+
+.email i {
+  font-size: 30px;
+  margin-right: 10px; /* Adds space between the icon and the text */
+}
 
 .socials a i {
   color: white;

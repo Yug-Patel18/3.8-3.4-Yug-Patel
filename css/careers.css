@@ -29,6 +29,16 @@ body {
   opacity: 0.8;
 }
 
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email i {
+  font-size: 30px;
+  margin-right: 10px; /* Adds space between the icon and the text */
+}
+
 .socials a i {
   color: white;
   font-size: 30px; /* Adjust the size as needed */
