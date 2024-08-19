@@ -1,0 +1,223 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ADLaM Display;
+/*  background-image: url('images/AIengineer.jpg'); */
+/*  background-repeat: no-repeat; */
+/*  background-attachment: fixed;   */
+/*  background-size: cover; */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1vw;
+  font-size: 3vw;
+  background-color: #0c0c0c;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email i {
+  font-size: 30px;
+  margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+.socials a i {
+  color: white;
+  font-size: 30px; /* Adjust the size as needed */
+  margin-right: 7px; /* Adds space between icons */
+}
+
+.socials a i:hover {
+  color: #ddd; /* Optional: Slightly lighter color on hover */
+}
+
+
+/* Grid container */
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+      "cover cover cover"
+      "cover cover cover"
+      "main main main"
+      "footer footer footer";
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.dropDown{
+  float:right;
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 30px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  transition-duration: 0.4s;
+}
+
+.dropDown:hover{
+  color: #818181;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.title{
+  grid-area: title;
+  text-align: center;
+  font-size: 5vw;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main{
+  height: auto;
+  grid-area: main;
+  text-align: center;
+  font-size: 3vw;
+  padding: 20px; 
+  font-weight: 200;
+  color: white;
+  background-color: #D1D1D1;
+}
+
+.cover{
+  grid-area: cover;
+  position: relative;
+  background-image: url('/images/contact.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  color: black; 
+  height: 100vh;
+  width: 100%;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  background-color: transparent;
+  padding: 12px 16px; /* Some padding */
+  font-size: 30px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  transition-duration: 0.4s;
+}
+
+.btn:hover{
+  color: #525252;
+}
+
+@media only screen and (max-width: 570px) {
+  .main{
+ /*   height: 50vh; */
+    height: auto;
+    grid-area: main;
+   /* background-color: #0c0c0c;*/
+    text-align: center;
+    font-size: 3vw;
+    padding: 10px; 
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main{
+    /*   height: 50vh; */
+    height: auto;
+    grid-area: main;
+    /* background-color: #0c0c0c;*/
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px; 
+  }
+  .footer{
+    padding: 1vw;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main{
+    /*   height: 50vh; */
+    height: auto;
+    grid-area: main;
+    /* background-color: #0c0c0c;*/
+    text-align: center;
+    font-size: 2vw;
+    padding: 20px; 
+  }
+  .title{
+    grid-area: title;
+    text-align: center;
+    font-size: 3vw;
+  }
+}
