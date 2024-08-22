@@ -1,6 +1,7 @@
 html, body {
   height: 100vh;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -139,7 +140,18 @@ body {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition-duration: 0.4s;
 }
+
+.title a {
+  color: white;
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.title a:hover {
+  color: #626060; /* Optional: Change color on hover */
+}
+
 
 .main{
   height: 70vh;
