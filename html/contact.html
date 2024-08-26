@@ -34,8 +34,37 @@
       </div>
 
       <div class="main">
-        <h3>Fill in this form:
-        </h3>
+        <h3>Career Interest Form</h3>
+        <form action="submit_form.php" method="POST">
+          <br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br></br>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required><br></br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required><br></br>
+          <label>Select the Careers you are interested in:</label><br>
+          
+          <input type="checkbox" id="ai_engineer" name="careers[]" value="AI Engineer">
+          <label for="ai_engineer">Artificial Intelligence (AI) Engineer</label><br>
+
+          <input type="checkbox" id="cyber_security" name="careers[]" value="Cyber Security Analyst">
+          <label for="cyber_security">Cyber Security Analyst</label><br>
+
+          <input type="checkbox" id="software_engineer" name="careers[]" value="Software Engineer">
+          <label for="software_engineer">Software Engineer</label><br>
+
+          <input type="checkbox" id="web_developer" name="careers[]" value="Web Developer">
+          <label for="web_developer">Web Developer</label><br>
+
+          <input type="checkbox" id="data_scientist" name="careers[]" value="Data Scientist">
+          <label for="data_scientist">Data Scientist</label><br>
+
+          <input type="checkbox" id="network_admin" name="careers[]" value="Network Administrator">
+          <label for="network_admin">Network Administrator</label><br><br>
+
+          <input type="submit" value="Submit">
+        </form>
       </div>
       <div class="footer">
         <div class="email">
