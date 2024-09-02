@@ -190,10 +190,18 @@ body {
 }
 
 .aiEngineer, .cyber, .software, .web, .data, .network {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
   margin: 20px;
   padding: 20px;
   border: 3px solid white;
   border-radius: 8px;
+}
+
+h2{
+  font-family: ADLaM Display;
 }
 
 @media only screen and (max-width: 570px) {
