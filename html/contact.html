@@ -9,12 +9,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- firebase start ****************************************-->
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <!-- Firebase App (core Firebase SDK) always required & must be listed 1st -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+  <!-- firebase end ******************************************-->
   <link href="/css/contact.css" rel="stylesheet" type="text/css" />
-  <script src="/script.js"></script>
   <script src="/setup.js"></script>
+  <script src="/script.js"></script>
 </head>
 
-  <body>
+  <body onload="fb_initialise()">
     <div class="container">
       <div class="cover">
         <div class="navbar">
@@ -35,15 +44,16 @@
       </div>
 
       <div class="main">
+        <h4>Fill out this form to recive emails about your chosen career and updates with the industry!</h4>
         <h3>Career Interest Form</h3>
         <form action="submit_form.php" method="POST">
           <br>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required><br></br>
+          <input type="text" id="name" name="name" maxlength="30" required><br></br>
           <label for="age">Age:</label>
-          <input type="number" id="age" name="age" required><br></br>
+          <input type="number" id="age" name="age" min="15" max="90" required><br></br>
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required><br></br>
+          <input type="text" id="email" name="email" maxlength="30" required><br></br>
           <label>Select the Careers you are interested in:</label><br>
           
           <input type="checkbox" id="ai_engineer" name="careers[]" value="AI Engineer">
@@ -64,7 +74,7 @@
           <input type="checkbox" id="network_admin" name="careers[]" value="Network Administrator">
           <label for="network_admin">Network Administrator</label><br><br>
 
-          <input type="submit" value="Submit">
+          <input class="btn" type="submit" value="Submit">
         </form>
       </div>
       <div class="footer">
