@@ -189,6 +189,39 @@ body {
   color: #818181;
 }
 
+.selection {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  flex-wrap: wrap; /* Allows the buttons to wrap to the next line if needed */
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.career-btn {
+  background-color: transparent;
+  padding: 10px;
+  font-family: 'ADLaM Display';
+  border-radius: 15px;
+  margin: 0; /* Remove margin since gap is handling spacing */
+  color: white;
+  transition-duration: 0.4s;
+  border-color: white;
+  border-style: solid;
+  font-size: 16px;
+  text-align: center;
+  flex: 1; /* Makes each button take equal space */
+  min-width: 150px; /* Ensures buttons don't get too small */
+  max-width: 200px; /* Ensures buttons don't get too large */
+}
+
+.career-btn:hover {
+  background-color: black;
+  border-color: grey;
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .aiEngineer, .cyber, .software, .web, .data, .network {
   font-family: "SUSE", sans-serif;
   font-optical-sizing: auto;
