@@ -10,6 +10,12 @@ function closeNav() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
+    const messageDiv = document.createElement('div');
+    messageDiv.style.display = 'none'; // Initially hidden
+    messageDiv.id = 'successMessage';
+    messageDiv.innerHTML = '<h2>Your choices have been saved!</h2>';
+    document.body.appendChild(messageDiv);
+
     if (form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -22,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 careers.push(checkbox.value);
             });
 
+            // Validate age
+            if (age < 15 || age > 90) {
+                alert('Please enter an age between 15 and 90.');
+                return; // Prevent form submission
+            }
+
             // Validate name and email length
             if (name.length > 30) {
                 alert('Name cannot be more than 30 characters.');
@@ -32,11 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Email cannot be more than 30 characters.');
                 return; // Prevent form submission
             }
-            // Age validation
-            if (age < 15 || age > 90) {
-                alert('Please enter an age between 15 and 90.');
-                return; // Prevent form submission
-            }
+
             // Validate at least one career selection
             if (careers.length === 0) {
                 alert('Please select at least one tech career.');
@@ -54,10 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 careers: careers
             };
 
-            // Using the sanitized email as the key in the 'users/' node
             database.ref('users/' + sanitizedEmail).set(formData)
             .then(() => {
-                alert('Data saved successfully!');
+                // Hide the form and show the success message
+                form.style.display = 'none';
+                messageDiv.style.display = 'block';
             })
             .catch((error) => {
                 console.error('Error saving data:', error);

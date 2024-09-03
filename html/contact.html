@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <title>Contact</title>
   <link rel="icon" type="image/x-icon" href="/images/icons/customer-support.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/digital.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@350&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- firebase start ****************************************-->
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
@@ -33,17 +35,18 @@
           <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="html/careers.html">Careers</a>
+              <a href="careers.html">Careers</a>
               <a href="#">Contact</a>
             </div>
           </div>
         </div>
         <div class="title">
-          <h1>Contact</h1>
+          <a href="#main"><h1>Contact</h1>
+          <i class="fa fa-chevron-down arrow-icon"></i></a>
         </div>
       </div>
 
-      <div class="main">
+      <div id="main" class="main">
         <h4>Fill out this form to recive emails about your chosen career and updates with the industry!</h4>
         <h3>Career Interest Form</h3>
         <form action="submit_form.php" method="POST">
@@ -74,7 +77,7 @@
           <input type="checkbox" id="network_admin" name="careers[]" value="Network Administrator">
           <label for="network_admin">Network Administrator</label><br><br>
 
-          <input class="btn" type="submit" value="Submit">
+          <input class="submit" type="submit" value="Submit">
         </form>
       </div>
       <div class="footer">
