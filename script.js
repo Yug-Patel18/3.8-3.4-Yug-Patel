@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     messageDiv.style.display = 'none'; // Initially hidden
     messageDiv.id = 'successMessage';
     messageDiv.innerHTML = '<h2>Your choices have been saved!</h2>';
-    document.body.appendChild(messageDiv);
+    form.parentNode.insertBefore(messageDiv, form.nextSibling);
 
     if (form) {
         form.addEventListener('submit', (e) => {
