@@ -164,7 +164,7 @@ body {
   font-size: 3vw;
   padding: 20px; 
   font-weight: 200;
-  color: white;
+  color: black;
   background-color: #D1D1D1;
 }
 
@@ -206,9 +206,9 @@ h4{
   padding: 10px;
   font-family: ADLaM Display;
   border-radius: 15px; 
-  color:white;
+  color:black;
   transition-duration: 0.4s;
-  border-color: white;
+  border-color: black;
   border-style: solid;
 }
 
