@@ -149,7 +149,7 @@ body {
 }
 
 .title a:hover {
-  color: #dedede; /* Optional: Change color on hover */
+  color: #919191; /* Optional: Change color on hover */
   transform: scale(1.1);
 }
 
@@ -160,7 +160,7 @@ body {
   font-size: 3vw;
   padding: 20px; 
   font-weight: 200;
-  color: white;
+  color: black;
   background-color: #BFBBB8;
 }
 
@@ -203,9 +203,9 @@ body {
   font-family: 'ADLaM Display';
   border-radius: 15px;
   margin: 0; /* Remove margin since gap is handling spacing */
-  color: white;
+  color: black;
   transition-duration: 0.4s;
-  border-color: white;
+  border-color: black;
   border-style: solid;
   font-size: 16px;
   text-align: center;
@@ -229,7 +229,7 @@ body {
   font-style: normal;
   margin: 20px;
   padding: 20px;
-  border: 3px solid white;
+  border: 3px solid black;
   border-radius: 8px;
 }
 
