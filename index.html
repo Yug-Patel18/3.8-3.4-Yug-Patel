@@ -4,41 +4,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Learn about exciting careers in the tech industry, explore different roles, and discover your ideal path in technology.">
+  <meta name="description"
+    content="Learn about exciting careers in the tech industry, explore different roles, and discover your ideal path in technology.">
   <title>Tech Careers</title>
+  <!--Favicon-->
   <link rel="icon" type="image/x-icon" href="/images/icons/digital.png">
+  <!-- External stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=ADLaM%20Display' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom styles -->
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="cover">
-      <div class="navbar">
+  <div class="container"> <!-- Container starts -->
+    <div class="cover"> <!-- Cover section starts -->
+      <div class="navbar"> <!-- Navbar starts -->
         <button class="btn" aria-label="Home"><i class="fa fa-home"></i></button>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">
           <button class="dropDown" aria-label="Open Navigation"><i class="fa fa-bars"></i></button>
         </span>
-          
+        <!-- Overlay navigation menu starts -->
         <div id="myNav" class="overlay">
           <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <a href="html/careers.html" aria-label="Careers">Careers</a>
             <a href="html/contact.html" aria-label="Contact">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="title">
-        <a href="#main"><h1>Tech Careers</h1>
-        <i class="fa fa-chevron-down arrow-icon"></i></a>
-      </div>
-    </div>
+          </div> <!-- Overlay content ends -->
+        </div> <!-- Overlay ends -->
+      </div> <!-- Navbar ends -->
+      <div class="title"> <!-- Title section starts -->
+        <a href="#main">
+          <h1>Tech Careers</h1>
+          <i class="fa fa-chevron-down arrow-icon"></i>
+        </a>
+      </div> <!-- Title section ends -->
+    </div> <!-- Cover section ends -->
 
-    <div id="main" class="main">
+    <div id="main" class="main"> <!-- Main content section starts -->
       <h3>Welcome to our website, your go-to place for exploring different tech careers! Whether you're just starting or
         looking for a change, we've made it easy to learn about various roles in technology. From coding and data
         science
@@ -47,23 +56,22 @@
       <button onclick="location.href = 'html/careers.html';" class="careersButton">
         <span>Careers</span>
       </button>
-    </div>
-    <div class="footer">
-      <div class="email">
+    </div> <!-- Main content section ends -->
+    <div class="footer"> <!-- Footer starts -->
+      <div class="email"> <!-- Email contact section starts -->
         <i class="fa-regular fa-envelope"></i>
         <p>: For help email 20421yp@hvhs.school.nz</p>
-      </div>
-      <div class="socials">
+      </div> <!-- Email contact section ends -->
+      <div class="socials"> <!-- Social media icons start -->
         <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
           <i class="fa-brands fa-facebook"></i>
         </a>
-      </div>
-    </div>
-
-  </div>
+      </div> <!-- Social media icons end -->
+    </div> <!-- Footer ends -->
+  </div> <!-- Container ends -->
 </body>
 
 </html>
