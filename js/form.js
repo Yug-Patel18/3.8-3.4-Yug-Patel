@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             database.ref('users/' + sanitizedEmail).set(formData)
-            .then(() => {
-                // Hide the form and show the success message
-                form.style.display = 'none';
-                messageDiv.style.display = 'block';
-            })
-            .catch((error) => {
-                console.error('Error saving data:', error);
-            });
+                .then(() => {
+                    // Hide the form and show the success message
+                    form.style.display = 'none';
+                    messageDiv.style.display = 'block';
+                })
+                .catch((error) => {
+                    console.error('Error saving data:', error);
+                });
         });
     }
 });

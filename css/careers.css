@@ -1,5 +1,6 @@
 /* Base styles for HTML and body */
-html, body {
+html,
+body {
   height: 100vh;
   width: 100%;
   scroll-behavior: smooth;
@@ -39,7 +40,7 @@ body {
 /* Icon style within the email section */
 .email i {
   font-size: 30px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 /* Social media icons styling */
@@ -59,30 +60,35 @@ body {
 .grid-container {
   height: 100%;
   display: grid;
-  grid-template-areas: 
-      "cover cover cover"
-      "cover cover cover"
-      "main main main"
-      "footer footer footer";
+  grid-template-areas:
+    "cover cover cover"
+    "cover cover cover"
+    "main main main"
+    "footer footer footer";
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-gap: 10px;
   padding: 10px;
 }
 
 /* Drop-down button styles */
-.dropDown{
-  float:right;
-  border: none; /* Remove borders */
-  color: white; /* White text */
+.dropDown {
+  float: right;
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* White text */
   background-color: transparent;
-  padding: 12px 16px; /* Some padding */
-  font-size: 30px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  padding: 12px 16px;
+  /* Some padding */
+  font-size: 30px;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
   transition-duration: 0.4s;
 }
 
 /* Hover effect for drop-down button */
-.dropDown:hover{
+.dropDown:hover {
   color: #818181;
 }
 
@@ -94,7 +100,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -119,7 +125,8 @@ body {
 }
 
 /* Hover and focus effects for overlay links */
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -133,17 +140,23 @@ body {
 
 /* Responsive styling for overlay on smaller screens */
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
 /* Title section styling */
-.title{
+.title {
   grid-area: title;
   text-align: center;
   font-size: 5vw;
@@ -166,41 +179,46 @@ body {
 }
 
 /* Main content area styling */
-.main{
+.main {
   height: auto;
   grid-area: main;
   text-align: center;
   font-size: 3vw;
-  padding: 20px; 
+  padding: 20px;
   font-weight: 200;
   color: black;
   background-color: #BFBBB8;
 }
 
 /* Cover section styling */
-.cover{
+.cover {
   grid-area: cover;
   position: relative;
   background-image: url('/images/AIengineer.jpg');
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
-  color: white; 
+  color: white;
   height: 100vh;
   width: 100%;
 }
 
 /* Button styling */
 .btn {
-  border: none; /* Remove borders */
-  color: white; /* White text */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* White text */
   background-color: transparent;
-  padding: 12px 16px; /* Some padding */
-  font-size: 30px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  padding: 12px 16px;
+  /* Some padding */
+  font-size: 30px;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
   transition-duration: 0.4s;
 }
 
-.btn:hover{
+.btn:hover {
   color: #818181;
 }
 
@@ -208,9 +226,12 @@ body {
 .selection {
   padding-top: 20px;
   display: flex;
-  justify-content: center; /* Centers the buttons horizontally */
-  flex-wrap: wrap; /* Allows the buttons to wrap to the next line if needed */
-  gap: 10px; /* Adds space between the buttons */
+  justify-content: center;
+  /* Centers the buttons horizontally */
+  flex-wrap: wrap;
+  /* Allows the buttons to wrap to the next line if needed */
+  gap: 10px;
+  /* Adds space between the buttons */
 }
 
 /* Career button styling */
@@ -219,16 +240,20 @@ body {
   padding: 10px;
   font-family: 'ADLaM Display';
   border-radius: 15px;
-  margin: 0; /* Remove margin since gap is handling spacing */
+  margin: 0;
+  /* Remove margin since gap is handling spacing */
   color: black;
   transition-duration: 0.4s;
   border-color: black;
   border-style: solid;
   font-size: 16px;
   text-align: center;
-  flex: 1; /* Makes each button take equal space */
-  min-width: 150px; /* Ensures buttons don't get too small */
-  max-width: 200px; /* Ensures buttons don't get too large */
+  flex: 1;
+  /* Makes each button take equal space */
+  min-width: 150px;
+  /* Ensures buttons don't get too small */
+  max-width: 200px;
+  /* Ensures buttons don't get too large */
 }
 
 .career-btn:hover {
@@ -240,9 +265,13 @@ body {
 }
 
 /* Category button styling */
-.aiEngineer, .cyber, .software, .web, .data, .network {
+.aiEngineer,
+.cyber,
+.software,
+.web,
+.data,
+.network {
   font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
   margin: 20px;
@@ -251,31 +280,32 @@ body {
   border-radius: 8px;
 }
 
-h2{
+h2 {
   font-family: ADLaM Display;
 }
 
 /* Media query for small screens (up to 570px wide) */
 @media only screen and (max-width: 570px) {
-  .main{
+  .main {
     height: auto;
     grid-area: main;
     text-align: center;
     font-size: 3vw;
-    padding: 10px; 
+    padding: 10px;
   }
 }
 
 /* Media query for medium screens (800px and up) */
 @media only screen and (min-width: 800px) {
-  .main{
+  .main {
     height: auto;
     grid-area: main;
     text-align: center;
     font-size: 2vw;
-    padding: 10px; 
+    padding: 10px;
   }
-  .footer{
+
+  .footer {
     padding: 1vw;
     font-size: 1.5vw;
   }
@@ -283,14 +313,15 @@ h2{
 
 /* Media query for large screens (1000px and up) */
 @media only screen and (min-width: 1000px) {
-  .main{
+  .main {
     height: auto;
     grid-area: main;
     text-align: center;
     font-size: 2vw;
-    padding: 20px; 
+    padding: 20px;
   }
-  .title{
+
+  .title {
     grid-area: title;
     text-align: center;
     font-size: 3vw;
