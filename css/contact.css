@@ -1,23 +1,23 @@
+/* Base styles for HTML and body */
 html, body {
   height: 100vh;
   width: 100%;
   scroll-behavior: smooth;
 }
 
+/* Global styles for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styles - setting font */
 body {
   font-family: ADLaM Display;
-/*  background-image: url('images/AIengineer.jpg'); */
-/*  background-repeat: no-repeat; */
-/*  background-attachment: fixed;   */
-/*  background-size: cover; */
 }
 
+/* Footer section styles */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -35,21 +35,29 @@ body {
   align-items: center;
 }
 
+/* Email section inside the footer */
+.email {
+  display: flex;
+  align-items: center;
+}
+
+/* Icon style within the email section */
 .email i {
   font-size: 30px;
-  margin-right: 10px; /* Adds space between the icon and the text */
+  margin-right: 10px; 
 }
 
+/* Social media icons styling */
 .socials a i {
   color: white;
-  font-size: 30px; /* Adjust the size as needed */
-  margin-right: 7px; /* Adds space between icons */
+  font-size: 30px;
+  margin-right: 7px;
 }
 
+/* Hover effect for social media icons */
 .socials a i:hover {
-  color: #ddd; /* Optional: Slightly lighter color on hover */
+  color: #ddd;
 }
-
 
 /* Grid container */
 .grid-container {
@@ -65,6 +73,7 @@ body {
   padding: 10px;
 }
 
+/* Drop-down button styles */
 .dropDown{
   float:right;
   border: none; /* Remove borders */
@@ -76,10 +85,12 @@ body {
   transition-duration: 0.4s;
 }
 
+/* Hover effect for drop-down button */
 .dropDown:hover{
   color: #818181;
 }
 
+/* Overlay menu styles */
 .overlay {
   height: 0%;
   width: 100%;
@@ -88,11 +99,11 @@ body {
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
 }
 
+/* Content inside the overlay */
 .overlay-content {
   position: relative;
   top: 25%;
@@ -101,6 +112,7 @@ body {
   margin-top: 30px;
 }
 
+/* Links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -110,10 +122,12 @@ body {
   transition: 0.3s;
 }
 
+/* Hover and focus effects for overlay links */
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
+/* Close button styles for the overlay */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -126,6 +140,7 @@ body {
     margin-top: 20px;
 }
 
+/* Responsive styling for overlay on smaller screens */
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
@@ -136,6 +151,7 @@ body {
   }
 }
 
+/* Title section styling */
 .title{
   grid-area: title;
   text-align: center;
@@ -148,15 +164,18 @@ body {
   transition-duration: 0.4s;
 }
 
+/* Styling for links within the title */
 .title a {
   color: black;
-  text-decoration: none; /* Optional: Remove underline */
+  text-decoration: none;
 }
 
+/* Hover effect for title links */
 .title a:hover {
-  color: #818181; /* Optional: Change color on hover */
+  color: #818181;
 }
 
+/* Main content section styling */
 .main{
   height: auto;
   grid-area: main;
@@ -168,6 +187,7 @@ body {
   background-color: #D1D1D1;
 }
 
+/* Cover section styling with background image */
 .cover{
   grid-area: cover;
   position: relative;
@@ -179,6 +199,7 @@ body {
   width: 100%;
 }
 
+/* Styling for h4 elements */
 h4{
   font-family: "SUSE", sans-serif;
   font-optical-sizing: auto;
@@ -186,9 +207,10 @@ h4{
   font-style: normal;
 }
 
+/* Button styling */
 .btn {
   border: none; /* Remove borders */
-  color: black; /* White text */
+  color: black; /* Black text */
   background-color: transparent;
   padding: 12px 16px; /* Some padding */
   font-size: 30px; /* Set a font size */
@@ -196,10 +218,12 @@ h4{
   transition-duration: 0.4s;
 }
 
+/* Hover effect for buttons */
 .btn:hover{
   color: #818181;
 }
 
+/* Submit button styling */
 .submit{
   font-size: 2vw;
   background-color: transparent;
@@ -212,6 +236,7 @@ h4{
   border-style: solid;
 }
 
+/* Hover effect for submit buttons */
 .submit:hover {
   background-color: black; 
   border-color: grey;
@@ -220,24 +245,22 @@ h4{
   cursor: pointer;
 }
 
+/* Media query for screens 570px or less */
 @media only screen and (max-width: 570px) {
   .main{
- /*   height: 50vh; */
     height: auto;
     grid-area: main;
-   /* background-color: #0c0c0c;*/
     text-align: center;
     font-size: 3vw;
     padding: 10px; 
   }
 }
 
+/* Media query for screens between 800px and 999px */
 @media only screen and (min-width: 800px) {
   .main{
-    /*   height: 50vh; */
     height: auto;
     grid-area: main;
-    /* background-color: #0c0c0c;*/
     text-align: center;
     font-size: 2vw;
     padding: 10px; 
@@ -248,12 +271,11 @@ h4{
   }
 }
 
+/* Media query for screens 1000px and wider */
 @media only screen and (min-width: 1000px) {
   .main{
-    /*   height: 50vh; */
     height: auto;
     grid-area: main;
-    /* background-color: #0c0c0c;*/
     text-align: center;
     font-size: 2vw;
     padding: 20px; 
