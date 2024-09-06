@@ -1,100 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Learn about exciting careers in the tech industry, explore different roles, and discover your ideal path in technology.">
-    <title>Careers</title>
-    <link rel="icon" type="image/x-icon" href="/images/icons/technology-disruption.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=ADLaM%20Display' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/css/careers.css" rel="stylesheet" type="text/css" />
-    <script src="/script.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description"
+    content="Learn about exciting careers in the tech industry, explore different roles, and discover your ideal path in technology.">
+  <title>Careers</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="/images/icons/technology-disruption.png">
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=ADLaM%20Display' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom styles -->
+  <link href="/css/careers.css" rel="stylesheet" type="text/css" />
+  <!-- JavaScript -->
+  <script src="/script.js"></script>
+</head>
 
-  <body>
-    <div class="container">
-      <div class="cover">
-        <div class="navbar">
-          <button class="btn" aria-label="Home" onclick="location.href = '/index.html';"><i class="fa fa-home"></i></button>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-            <button class="dropDown" aria-label="Open Navigation"><i class="fa fa-bars"></i></button>
-          </span>
+<body>
+  <div class="container"> <!-- Container starts -->
+    <div class="cover"> <!-- Cover section starts -->
+      <div class="navbar"> <!-- Navbar starts -->
+        <button class="btn" aria-label="Home" onclick="location.href = '/index.html';"><i
+            class="fa fa-home"></i></button>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+          <button class="dropDown" aria-label="Open Navigation"><i class="fa fa-bars"></i></button>
+        </span>
+        <!-- Overlay navigation menu starts -->
+        <div id="myNav" class="overlay">
+          <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#" aria-label="Careers">Careers</a>
+            <a href="contact.html" aria-label="Contact">Contact</a>
+          </div> <!-- Overlay content ends -->
+        </div> <!-- Overlay ends -->
+      </div> <!-- Navbar ends -->
+      <div class="title"> <!-- Title section starts -->
+        <a href="#main">
+          <h1>Careers</h1>
+          <i class="fa fa-chevron-down arrow-icon"></i>
+        </a>
+      </div> <!-- Title section ends -->
+    </div> <!-- Cover section ends -->
+    <!-- Start of Main Section -->
+    <div id="main" class="main">
+      <h3>Here you will be able to learn about all the different careers, so get started below:
+      </h3>
+      <div class="selection"> <!-- Career Selection Buttons -->
+        <button class="career-btn" onclick="location.href='#aiEngineer'">Artificial Intelligence Engineer</button>
+        <button class="career-btn" onclick="location.href='#cyber'">Cyber Security Analyst</button>
+        <button class="career-btn" onclick="location.href='#software'">Software Engineer</button>
+        <button class="career-btn" onclick="location.href='#web'">Web Developer</button>
+        <button class="career-btn" onclick="location.href='#data'">Data Scientist</button>
+        <button class="career-btn" onclick="location.href='#network'">Network Administrator</button>
+      </div> <!-- End of Career Selection Buttons -->
 
-          <div id="myNav" class="overlay">
-            <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#" aria-label="Careers">Careers</a>
-                <a href="contact.html" aria-label="Contact">Contact</a>
-            </div>
-          </div>
-        </div>
-        <div class="title">
-          <a href="#main"><h1>Careers</h1>
-          <i class="fa fa-chevron-down arrow-icon"></i></a>
-        </div>
+      <!-- Career Information Sections -->
+      <div id="aiEngineer" class="aiEngineer">
+        <h2>Artificial Intelligence engineer</h2>
+        <h4>Embark on an exciting journey into the realm of Artificial Intelligence (AI) engineering, where innovation
+          meets intelligence. As an AI Engineer, you'll be at the forefront of developing cutting-edge technologies that
+          mimic human cognition. Your role involves crafting and implementing machine learning algorithms, diving into
+          the intricacies of neural networks, and fine-tuning AI models to solve real-world problems. Join the forefront
+          of technological advancement as an AI Engineer, where your passion for AI can reshape industries and push the
+          boundaries of what's possible.</h4>
       </div>
-
-      <div id="main" class="main">
-        <h3>Here you will be able to learn about all the different careers, so get started below:
-        </h3>
-        <div class="selection">
-          <button class="career-btn" onclick="location.href='#aiEngineer'">Artificial Intelligence Engineer</button>
-          <button class="career-btn" onclick="location.href='#cyber'">Cyber Security Analyst</button>
-          <button class="career-btn" onclick="location.href='#software'">Software Engineer</button>
-          <button class="career-btn" onclick="location.href='#web'">Web Developer</button>
-          <button class="career-btn" onclick="location.href='#data'">Data Scientist</button>
-          <button class="career-btn" onclick="location.href='#network'">Network Administrator</button>
-        </div>
-
-        <div id="aiEngineer" class="aiEngineer">
-          <h2>Artificial Intelligence engineer</h2>
-          <h4>Embark on an exciting journey into the realm of Artificial Intelligence (AI) engineering, where innovation meets intelligence. As an AI Engineer, you'll be at the forefront of developing cutting-edge technologies that mimic human cognition. Your role involves crafting and implementing machine learning algorithms, diving into the intricacies of neural networks, and fine-tuning AI models to solve real-world problems. Join the forefront of technological advancement as an AI Engineer, where your passion for AI can reshape industries and push the boundaries of what's possible.</h4>
-        </div>
-        <div id="cyber" class="cyber">
-          <h2>Cyber security analyst</h2>
-          <h4>Welcome to the world of Cybersecurity Analysis, where safeguarding digital landscapes is both a challenge and a mission. As a Cybersecurity Analyst, you'll be on the front lines of defending organizations from evolving cyber threats. Your role involves monitoring and analyzing security measures, identifying vulnerabilities, and implementing strategies to fortify digital defenses. Join us in this dynamic field, where your expertise will play a crucial role in maintaining the integrity and resilience of digital ecosystems.</h4>
-        </div>
-        <div id="software" class="software">
-          <h2>Software engineer</h2>
-          <h4>Welcome to the dynamic realm of Software Engineering! As a Software Engineer, you'll be at the forefront of crafting innovative solutions and building the digital foundations that power our modern world. Your role involves designing, developing, and testing software applications, utilizing your problem-solving skills to create efficient and scalable solutions. Whether you're passionate about developing user-friendly interfaces or delving into complex algorithms, a career as a Software Engineer offers a thrilling journey of continuous learning and contribution to cutting-edge technology. Join us on this exciting adventure, where your coding expertise transforms ideas into reality.</h4>
-        </div>
-        <div id="web" class="web">
-          <h2>Web developer</h2>
-          <h4>Welcome to the dynamic world of web development, where creativity meets functionality to shape the digital landscape. As a web developer, you play a pivotal role in crafting the online experiences that captivate users and drive businesses forward. From designing visually appealing interfaces to implementing robust and responsive code, your work brings websites to life. Join the ranks of innovative professionals shaping the internet and creating seamless, user-friendly environments that leave a lasting impact.</h4>
-        </div>
-        <div id="data" class="data">
-          <h2>Data Scientist</h2>
-          <h4>Welcome to the world of Data Science, a field at the forefront of transforming raw data into meaningful insights. As a Data Scientist, you'll be the architect of knowledge, employing statistical analysis and machine learning techniques to extract valuable information from massive datasets. Dive into the exciting realm of predictive modeling, pattern recognition, and data-driven decision-making, where your expertise will play a pivotal role in shaping the strategies and directions of organizations. Join us on this journey where curiosity meets computation, and your skills contribute to unlocking the hidden potentials within the vast data landscape.
-</h4>
-        </div>
-        <div id="network" class="network">
-          <h2>Network Administrator</h2>
-          <h4>Welcome to the dynamic realm of Network Administration! As a Network Administrator, you play a pivotal role in ensuring the seamless functioning of an organization's computer networks. Your responsibilities include configuring and maintaining network hardware and software, troubleshooting connectivity issues, and implementing security measures to safeguard against cyber threats. Dive into the intricate world of network management, where your expertise is key to maintaining a reliable and efficient communication infrastructure vital for the success of businesses in the digital age. Join us on a journey where your skills keep the digital pathways running smoothly and securely.
+      <div id="cyber" class="cyber">
+        <h2>Cyber security analyst</h2>
+        <h4>Welcome to the world of Cybersecurity Analysis, where safeguarding digital landscapes is both a challenge
+          and a mission. As a Cybersecurity Analyst, you'll be on the front lines of defending organizations from
+          evolving cyber threats. Your role involves monitoring and analyzing security measures, identifying
+          vulnerabilities, and implementing strategies to fortify digital defenses. Join us in this dynamic field, where
+          your expertise will play a crucial role in maintaining the integrity and resilience of digital ecosystems.
         </h4>
-        </div>
-        
-        
       </div>
-      <div class="footer">
-        <div class="email">
-          <i class="fa-regular fa-envelope"></i>
-          <p>: For help email 20421yp@hvhs.school.nz</p>
-        </div>
-        <div class="socials">
-          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </div>
+      <div id="software" class="software">
+        <h2>Software engineer</h2>
+        <h4>Welcome to the dynamic realm of Software Engineering! As a Software Engineer, you'll be at the forefront of
+          crafting innovative solutions and building the digital foundations that power our modern world. Your role
+          involves designing, developing, and testing software applications, utilizing your problem-solving skills to
+          create efficient and scalable solutions. Whether you're passionate about developing user-friendly interfaces
+          or delving into complex algorithms, a career as a Software Engineer offers a thrilling journey of continuous
+          learning and contribution to cutting-edge technology. Join us on this exciting adventure, where your coding
+          expertise transforms ideas into reality.</h4>
       </div>
-
-
+      <div id="web" class="web">
+        <h2>Web developer</h2>
+        <h4>Welcome to the dynamic world of web development, where creativity meets functionality to shape the digital
+          landscape. As a web developer, you play a pivotal role in crafting the online experiences that captivate users
+          and drive businesses forward. From designing visually appealing interfaces to implementing robust and
+          responsive code, your work brings websites to life. Join the ranks of innovative professionals shaping the
+          internet and creating seamless, user-friendly environments that leave a lasting impact.</h4>
+      </div>
+      <div id="data" class="data">
+        <h2>Data Scientist</h2>
+        <h4>Welcome to the world of Data Science, a field at the forefront of transforming raw data into meaningful
+          insights. As a Data Scientist, you'll be the architect of knowledge, employing statistical analysis and
+          machine learning techniques to extract valuable information from massive datasets. Dive into the exciting
+          realm of predictive modeling, pattern recognition, and data-driven decision-making, where your expertise will
+          play a pivotal role in shaping the strategies and directions of organizations. Join us on this journey where
+          curiosity meets computation, and your skills contribute to unlocking the hidden potentials within the vast
+          data landscape.
+        </h4>
+      </div>
+      <div id="network" class="network">
+        <h2>Network Administrator</h2>
+        <h4>Welcome to the dynamic realm of Network Administration! As a Network Administrator, you play a pivotal role
+          in ensuring the seamless functioning of an organization's computer networks. Your responsibilities include
+          configuring and maintaining network hardware and software, troubleshooting connectivity issues, and
+          implementing security measures to safeguard against cyber threats. Dive into the intricate world of network
+          management, where your expertise is key to maintaining a reliable and efficient communication infrastructure
+          vital for the success of businesses in the digital age. Join us on a journey where your skills keep the
+          digital pathways running smoothly and securely.
+        </h4>
+      </div>
+      <!-- End of Career Information Sections -->
     </div>
-  </body>
-  </html>
+    <!-- End of Main Section -->
+
+    <div class="footer"> <!-- Footer starts -->
+      <div class="email"> <!-- Email contact section starts -->
+        <i class="fa-regular fa-envelope"></i>
+        <p>: For help email 20421yp@hvhs.school.nz</p>
+      </div> <!-- Email contact section ends -->
+      <div class="socials"> <!-- Social media icons start -->
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div> <!-- Social media icons end -->
+    </div> <!-- Footer ends -->
+
+  </div>
+</body>
+
+</html>

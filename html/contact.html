@@ -4,100 +4,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Learn about exciting careers in the tech industry, explore different roles, and discover your ideal path in technology.">
+  <meta name="description"
+    content="Learn about exciting careers in the tech industry, explore different roles, and discover your ideal path in technology.">
   <title>Contact</title>
+  <!--Favicon-->
   <link rel="icon" type="image/x-icon" href="/images/icons/customer-support.png">
   <link rel="icon" type="image/x-icon" href="/images/icons/digital.png">
+  <!-- External stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=ADLaM%20Display' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@350&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- firebase start ****************************************-->
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
   <!-- Firebase App (core Firebase SDK) always required & must be listed 1st -->
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-  <!-- Add Firebase products that you want to use -->
+  <!-- Add Firebase products -->
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
   <!-- firebase end ******************************************-->
+  <!-- Custom styles -->
   <link href="/css/contact.css" rel="stylesheet" type="text/css" />
+  <!-- JavaScript -->
   <script src="/js/setup.js"></script>
   <script src="/script.js"></script>
   <script src="/js/form.js"></script>
 </head>
 
-  <body onload="fb_initialise()">
-    <div class="container">
-      <div class="cover">
-        <div class="navbar">
-          <button class="btn" aria-label="Home" onclick="location.href = '/index.html';"><i class="fa fa-home"></i></button>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="dropDown" aria-label="Open Navigation" ><i class="fa fa-bars"></i></button></span>
-
-          <div id="myNav" class="overlay">
-            <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="careers.html" aria-label="Careers">Careers</a>
-              <a href="#" aria-label="Contact">Contact</a>
-            </div>
-          </div>
-        </div>
-        <div class="title">
-          <a href="#main"><h1>Contact</h1>
-          <i class="fa fa-chevron-down arrow-icon"></i></a>
-        </div>
+<body onload="fb_initialise()">
+  <div class="container"> <!-- Container starts -->
+    <div class="cover"> <!-- Cover section starts -->
+      <div class="navbar"> <!-- Navbar starts -->
+        <button class="btn" aria-label="Home" onclick="location.href = '/index.html';"><i
+            class="fa fa-home"></i></button>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="dropDown"
+            aria-label="Open Navigation"><i class="fa fa-bars"></i></button></span>
+        <!-- Overlay navigation menu starts -->
+        <div id="myNav" class="overlay">
+          <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="careers.html" aria-label="Careers">Careers</a>
+            <a href="#" aria-label="Contact">Contact</a>
+          </div> <!-- Overlay content ends -->
+        </div> <!-- Overlay ends -->
+      </div> <!-- Navbar ends -->
+      <div class="title"> <!-- Title section starts -->
+        <a href="#main">
+          <h1>Contact</h1>
+          <i class="fa fa-chevron-down arrow-icon"></i>
+        </a>
       </div>
-
-      <div id="main" class="main">
-        <h4>Fill out this form to recive emails about your chosen career and updates with the industry!</h4>
-        <h3>Career Interest Form</h3>
-        <form action="submit_form.php" method="POST">
-          <br>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" maxlength="30" required><br><br>
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" min="15" max="90" required><br><br>
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" maxlength="30" required><br><br>
-          <label>Select the Careers you are interested in:</label><br>
-          
-          <input type="checkbox" id="ai_engineer" name="careers[]" value="AI Engineer">
-          <label for="ai_engineer">Artificial Intelligence (AI) Engineer</label><br>
-
-          <input type="checkbox" id="cyber_security" name="careers[]" value="Cyber Security Analyst">
-          <label for="cyber_security">Cyber Security Analyst</label><br>
-
-          <input type="checkbox" id="software_engineer" name="careers[]" value="Software Engineer">
-          <label for="software_engineer">Software Engineer</label><br>
-
-          <input type="checkbox" id="web_developer" name="careers[]" value="Web Developer">
-          <label for="web_developer">Web Developer</label><br>
-
-          <input type="checkbox" id="data_scientist" name="careers[]" value="Data Scientist">
-          <label for="data_scientist">Data Scientist</label><br>
-
-          <input type="checkbox" id="network_admin" name="careers[]" value="Network Administrator">
-          <label for="network_admin">Network Administrator</label><br><br>
-
-          <input class="submit" type="submit" value="Submit">
-        </form>
-      </div>
-      <div class="footer">
-        <div class="email">
-          <i class="fa-regular fa-envelope"></i>
-          <p>: For help email 20421yp@hvhs.school.nz</p>
-        </div>
-        <div class="socials">
-          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </div>
-      </div>
-
     </div>
-  </body>
 
-  </html>
+    <div id="main" class="main">
+      <!-- Section header explaining the purpose of the form -->
+      <h4>Fill out this form to receive emails about your chosen career and updates within the industry!</h4>
+      <h3>Career Interest Form</h3>
+
+      <!-- Form submission, with action targeting PHP handler for processing -->
+      <form action="submit_form.php" method="POST">
+
+        <!-- Name field with input validation for max characters and required attribute -->
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="30" required><br><br>
+
+        <!-- Age field with validation for minimum and maximum values -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="15" max="90" required><br><br>
+
+        <!-- Email field with max length and required attribute -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" maxlength="30" required><br><br>
+
+        <!-- Checkbox inputs allowing multiple career selections -->
+        <label>Select the Careers you are interested in:</label><br>
+
+        <!-- Checkbox for Artificial Intelligence (AI) Engineer -->
+        <input type="checkbox" id="ai_engineer" name="careers[]" value="AI Engineer">
+        <label for="ai_engineer">Artificial Intelligence (AI) Engineer</label><br>
+
+        <!-- Checkbox for Cyber Security Analyst -->
+        <input type="checkbox" id="cyber_security" name="careers[]" value="Cyber Security Analyst">
+        <label for="cyber_security">Cyber Security Analyst</label><br>
+
+        <!-- Checkbox for Software Engineer -->
+        <input type="checkbox" id="software_engineer" name="careers[]" value="Software Engineer">
+        <label for="software_engineer">Software Engineer</label><br>
+
+        <!-- Checkbox for Web Developer -->
+        <input type="checkbox" id="web_developer" name="careers[]" value="Web Developer">
+        <label for="web_developer">Web Developer</label><br>
+
+        <!-- Checkbox for Data Scientist -->
+        <input type="checkbox" id="data_scientist" name="careers[]" value="Data Scientist">
+        <label for="data_scientist">Data Scientist</label><br>
+
+        <!-- Checkbox for Network Administrator -->
+        <input type="checkbox" id="network_admin" name="careers[]" value="Network Administrator">
+        <label for="network_admin">Network Administrator</label><br><br>
+
+        <!-- Submit button for form submission -->
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div class="footer"> <!-- Footer starts -->
+      <div class="email"> <!-- Email contact section starts -->
+        <i class="fa-regular fa-envelope"></i>
+        <p>: For help email 20421yp@hvhs.school.nz</p>
+      </div> <!-- Email contact section ends -->
+      <div class="socials"> <!-- Social media icons start -->
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div> <!-- Social media icons end -->
+    </div> <!-- Footer ends -->
+
+  </div>
+</body>
+
+</html>
