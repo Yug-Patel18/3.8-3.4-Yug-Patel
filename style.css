@@ -182,8 +182,10 @@ body {
 }
 
 .careersButton{
+  font-size: 1.3em; /* Adjust this value to match the size of your <h1> */
+  font-weight: bold; /* Make the text bold to match <h1> */
+  padding: 10px 20px;
   background-color: transparent;
-  padding: 10px;
   font-family: ADLaM Display;
   border-radius: 15px; 
   margin: 3%;
